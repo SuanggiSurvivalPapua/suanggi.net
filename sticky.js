@@ -1,4 +1,3 @@
-<script>
 window.onscroll = function() {myFunction()};
 
 var header-suanggi = document.getElementById("SuanggiSurvivalPapua");
@@ -11,4 +10,3 @@ function myFunction() {
     header-suanggi.classList.remove("sticky");
   }
 }
-</script>
