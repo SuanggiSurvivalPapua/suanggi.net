@@ -1,0 +1,107 @@
+ body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  color: #ddd;
+}
+
+
+.top-container {
+  background-color: #333;
+  padding-right:30%;
+  padding-left: 30%;
+  text-align: center;
+}
+
+}
+.header {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+footer {
+    display: block;	
+    float: left;
+    width: 100%;
+    clear: both;
+    height: 250px;
+    background-color: #212121;
+    padding-bottom: 0px;
+    color: #c0c0c0;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	size: 100%;
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #b85cf1;
+  color: #333;
+} 
+.topnav a.suanggicontact {
+  color: #9c4fcc;
+  background-color: #333;
+}
+.topnav a.suanggicontact:hover{
+  background-color: #212121;
+} 
+.topnav a.suanggiassets {
+  color: #ffb821;
+  background-color: #333;
+}
+.topnav a.suanggiassets:hover{
+  background-color: #212121;
+} 
+.topnav a.suanggiforum {
+  color: #e63d6c;
+  background-color: #333;
+}
+.topnav a.suanggiforum:hover{
+  background-color: #212121;
+}
+.topnav a.suanggiabout {
+  color: #7488dc;
+  background-color: #333;
+}
+.topnav a.suanggiabout:hover{
+  background-color: #212121;
+}
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+… dan seterusnya …
