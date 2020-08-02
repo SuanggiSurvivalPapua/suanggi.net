@@ -1,99 +1,249 @@
-.top-container {
-  background-color: #333;
-  padding-right:30%;
-  padding-left: 30%;
-  text-align: center;
-}
+/*LAYOUT*/
+/*LAYOUT*/
+/*LAYOUT*/
+/*LAYOUT*/
 
-}
-.header {
-  background: #f1f1f1;
-  color: #333;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
-footer {
+	
+main{
     display: block;	
     float: left;
     width: 100%;
     clear: both;
-    height: 250px;
+    background-color: #333;
+    color: #c0c0c0;
+}
+
+header{
+	width: 100%;
+    color: #c0c0c0;
+}
+
+footer{
+    display: block;	
+    float: left;
+    width: 100%;
+    clear: both;
+    height: 300px;
     background-color: #212121;
     padding-bottom: 0px;
     color: #c0c0c0;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-	size: 100%;
-    background-color: #333;
-    overflow: hidden;
+
+/*EFFECT SCROLL FIXED*/
+/*EFFECT SCROLL FIXED*/
+/*EFFECT SCROLL FIXED*/
+/*EFFECT SCROLL FIXED*/
+.stickytop{
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.stickytop + main{
+	padding-top: 102px;
+}
+
+/*CONTENT + SIDEBAR*/
+/*CONTENT + SIDEBAR*/
+/*CONTENT + SIDEBAR*/
+.wrap{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+.headersuanggi{
+	background-color: #333;
+	padding: 5px;
+	text-align: center;
+} 
+ 
+ 
+/*NAVIGASI TOP*/
+/*NAVIGASI TOP LEFT*/
+/*NAVIGASI TOP A*/
+.menunavbarsuanggi{
+	background: #212121;
+	overflow: hidden;
+}
+
+.menunavbarsuanggi .navbarleft{
+	float: left;
+	overflow: hidden;
+}
+
+.navbar a {
   float: left;
-  color: #f2f2f2;
+  font-size: 16px;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+}
+/*NAVIGASI RIGHT*/
+.menunavbarsuanggi .navbarright{
+	float: right;
+	position: relative;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
+/*NAVIGASI A HOVER, SUBNAV HOVER AND SUBNAVBTN(BUTTON)*/
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+/*NAVIGASI*/
+/*BUTTON NAVIGASI*/
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/*absolute jika tanpa sticky, fixed jika dengan sticky*/
+.subnav-content {
+  display: none;
+  position: fixed;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #b85cf1;
-  color: #333;
-} 
-.topnav a.suanggicontact {
-  color: #9c4fcc;
-  background-color: #333;
-}
-.topnav a.suanggicontact:hover{
-  background-color: #212121;
-} 
-.topnav a.suanggiassets {
-  color: #ffb821;
-  background-color: #333;
-}
-.topnav a.suanggiassets:hover{
-  background-color: #212121;
-} 
-.topnav a.suanggiforum {
-  color: #e63d6c;
-  background-color: #333;
-}
-.topnav a.suanggiforum:hover{
-  background-color: #212121;
-}
-.topnav a.suanggiabout {
-  color: #7488dc;
-  background-color: #333;
-}
-.topnav a.suanggiabout:hover{
-  background-color: #212121;
-}
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
+.subnav:hover .subnav-content {
+  display: block;
 }
 
-… dan seterusnya …
+/*BUTTON class*/
+/*BUTTON class*/
+/*BUTTON class*/
+
+
+/*BUTTON hover*/
+/*BUTTON hover*/
+/*BUTTON hover*/
+
+/*DROPDOWN LEFT*/
+/*DROPDOWN LEFT*/
+/*DROPDOWN LEFT*/
+
+
+
+
+
+
+
+
+
+
+/*akhir menunavbarsuanggi*/
+ 
+ 
+.clear{
+	clear: both;
+}
+ 
+ 
+.badan{
+	height: 100%;
+}
+
+.wrap .badan{
+	width: 100%;
+}
+
+/*bagian sidebar*/
+.wrap .badan .sidebarleft{
+	background: rgba(255, 255, 255, 0.1);
+	float: left;	
+	width: 20%;
+	height: 100%;
+}
+
+.wrap .badan .sidebarright{
+	background: rgba(255, 255, 255, 0.1);
+	float: left;	
+	width: 20%;
+	height: 100%;
+} 
+/*akhir sidebar*/
+ 
+.wrap .badan .content{
+	background: red;
+	float: left;
+	height: 100%;
+	width: 60%;	
+}
+.footer{
+	width: 100%;
+	float: left;
+	height: 90%;
+	text-align: center;
+}
+
+.footer ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;	
+	overflow: hidden;
+}
+.footer ul a{
+	color: #555;
+	margin: 5px;
+}
+.footer h2{
+	margin: 5px;
+}
+.footer .footerleft{
+	width: 30%;
+	float: left;
+	height: 100%;
+	padding-left: 5%;
+}
+.footer .footercenter{
+	width: 30%;
+	float: left;
+	height: 100%;
+}
+.footer .footerright{
+	width: 30%;
+	float: left;
+	height: 100%;
+	padding-right: 5%;
+}
+.copyright{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+    background-color: #212121;
+}
+.copyright .cr{
+	margin: 10px;
+	text-align: center;
+}
